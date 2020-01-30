@@ -119,3 +119,10 @@ div, h2,h1 {
 	color:#e40c71;
 }
 
+
+form {
+	color: #ffff;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	margin: 20px;
+}
