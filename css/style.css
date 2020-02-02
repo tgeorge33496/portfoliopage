@@ -126,3 +126,21 @@ form {
 	font-family: 'Raleway', sans-serif;
 	margin: 20px;
 }
+
+form input {
+	width: 25%;
+	margin: 10px;
+}
+
+input[type=submit]{
+	padding: 10px;
+	width: 5%;
+	background-color: #e40c71;
+	color: #ffff;
+	border-color: #e40c71;
+
+}
+
+input[type=message]{
+	
+}
