@@ -1,3 +1,34 @@
+
+/*Hack different depth of nodes will use different colour allowing you to 
+see the size of each element on the page, their margin and their padding. 
+Now you can easily identify inconsistencies.
+
+* { background-color: rgba(255,0,0,.2); }
+* * { background-color: rgba(0,255,0,.2); }
+* * * { background-color: rgba(0,0,255,.2); }
+* * * * { background-color: rgba(255,0,255,.2); }
+* * * * * { background-color: rgba(0,255,255,.2); }
+* * * * * * { background-color: rgba(255,255,0,.2); }
+* * * * * * * { background-color: rgba(255,0,0,.2); }
+* * * * * * * * { background-color: rgba(0,255,0,.2); }
+* * * * * * * * * { background-color: rgba(0,0,255,.2); }*/
+
+
+/*resets all default browser padding and margin to 0*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*resets the box model to border-box for all HTML elements. */
+/*The border-box model is not affected by border thickness or padding.*/
+* {
+	/*box-sizing: border-box;*/
+}
+
+
+
+/*start of stylesheet*/
 body {
 	background-color: #21232c;
 }
@@ -6,8 +37,6 @@ body {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	/*margin-top: 16%;
-	margin-left: 20%;*/
 }
 
 img:hover {
@@ -22,7 +51,14 @@ h1, h2 {
 	font-weight: normal;
 	margin: 0px;
 	padding: 0px;
-	/*position: absolute;*/
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	color: #ffffff;
+	font-size: 20px;
+	margin-top: 20px;
+
 }
 
 h1 {
@@ -38,6 +74,7 @@ h2 {
 span {
 	color: #e40c71;
 	font-weight: bold;
+	word-spacing: 
 }
 
 .nav {
@@ -83,6 +120,10 @@ div, h2,h1 {
 	text-align:left;
 }
 
+.home-header h1{
+	text-align: center;
+}
+
 .projects-container {
 	display: flex;
 	justify-content: center;
@@ -96,6 +137,7 @@ div, h2,h1 {
 }
 
 .flex-item {
+	display:block;
 	height: 350px;
 	width: 300px;
 	padding: 5px;
@@ -138,9 +180,12 @@ input[type=submit]{
 	background-color: #e40c71;
 	color: #ffff;
 	border-color: #e40c71;
+	border-radius: 5px;
 
 }
 
 input[type=message]{
+	padding-top: 50px;
+	padding-bottom:50px;
 	
 }
