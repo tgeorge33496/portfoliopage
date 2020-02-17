@@ -96,6 +96,8 @@ span {
 	font-family: 'Raleway', sans-serif;
 }
 
+
+
 .container {
 	height: 600px;
 	display: flex;
@@ -189,3 +191,59 @@ input[type=message]{
 	padding-bottom:50px;
 	
 }
+
+
+
+.cv {
+	background-color: #e40c71;
+	color: #ffff;
+	border: none;
+
+	padding: 10px;
+	
+}
+
+@media only screen and (min-width:320px) and (max-width:500px) and
+(orientation:portrait) {
+	body {
+		background-color: green;
+	}
+	
+
+
+}
+
+/*below media query uses commas this is used 
+if only one of the multiple meadia feature must be met*/
+
+@media only screen and (max-width:557px){
+	.home-header h1, h2 {
+		font-size: 20px;	
+
+	}
+	.nav {
+		padding: 10px;
+		font-size: 12px;
+	}
+}
+
+
+	@media only screen and (max-width:842px) {
+
+ 	.container {
+ 		display:inline-flex;
+  		flex-wrap:wrap;
+
+ 	}
+
+ 	.about-header h1 {
+ 		text-align: center;
+ 		font-size: 30px;
+ 	}
+
+	.about-header p {
+		text-align: center;
+		font-size: 15px;
+	}
+}
+
